@@ -41,7 +41,7 @@
 <section id="OL">
 <h3>Outline</h3>
 <ul>
-<li> <a href="#/DSA" title="DSA"> 3D Determinstic Slope Stability </a> </li>
+<li> <a href="#/LEM" title="LEM"> 3D Limit Equilibrium Method </a> </li>
 <li> <a href="#/PRA" title="PRA"> Reliability Assessment </a> </li>
 <li> <a href="#/GA" title="GA"> Genetic Algorithm </a> </li>
 <li> <a href="#/PR" title="PR"> Procedure </a> </li>
@@ -50,15 +50,15 @@
 </section>
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<section id="DSA">
-<h3> <a href="index.html#/OL" title="back"> 3D Determinstic Slope Stability </a></h3>
+<section id="LEM">
+<h3> <a href="index.html#/OL" title="back"> 3D Limit Equilibrium Method </a></h3>
 <img src="images/3DDSA.jpg" alt="3DDSA" style="width:400px;height:380px;border:0;" align = "right"> 
 <p style='font-size:24px' align ='left'> Ellipsoid failure surface is created by imaginary sphere. <p>
 <p style='font-size:24px' align ='left'> Digital Elevation Model (DEM) is used which is made of many columns. <p>
-<p style='font-size:24px' align ='left'> Imaginary sphere are created within Boundary box. <p>
+<p style='font-size:24px' align ='left'> Imaginary sphere is generated within Boundary box. <p>
 <!-- <img src="images/Columns.jpg" alt="col" style="width:300px;height:280px;border:0;" align = "left">  -->
 <img src="images/3DColumn.jpg" alt="3DC" style="width:398px;height:189px;border:0;" align= "centre">         
-<p style='font-size:24px' align ='left'> Bishop Method (Limit Equilibrium Method) General Equation: <p>        
+<p style='font-size:24px' align ='left'> Bishop Method General Equation: <p>        
 <p style='font-size:20px' align ='left'> \[FOS = \frac{\sum R_{i,j}\left[c_{i,j}A_{i,j}+\left[\left\{\frac{W_{i,j}-\frac{c_{i,j}A_{i,j}sin&alpha;_{i,j}}{FOS}+\frac{u_{i,j}A_{i,j}tan&phi;_{i,j}sin&alpha;_{i,j}}{FOS}}{cos&epsilon;_{i,j}+\frac{tan&phi;_{i,j}sin&alpha;_{i,j}}{FOS}}\right\}-u_{i,j}A_{i,j}\right]tan&phi;_{i,j}\right]}{\sum W_{i,j}[R_{i,j}sin&alpha;_{i,j}+k_{eq}e_{i,q}]}\] <p>
 </section>
 
@@ -71,21 +71,21 @@
 <p style='font-size:20px' align ='left'> \[P_{f} = P( g(X) &le; 0 ) = &int; f(X) dX &asymp; 1 - &Phi;(&beta;) \] <p>
 <p style='font-size:24px' align ='left'> &Phi; is the cumulative distribution of the standard normal variance <p>
 <p style='font-size:24px' align ='left'> f(X) is the cumulative distribution function <p>
-<p style='font-size:24px' align ='left'> g(X) is the limit state function <p>
+<p style='font-size:24px' align ='left'> g(X) is the limit state function (failure force = resistance) <p>
 <!-- <p style='font-size:24px' align ='left'> Hasofer-Lind Reliabiliy Index <p> -->
 <h4> FORM Reliability Index (&beta;) (Hasofer-Lind) </h4>
 <img src="images/HL.jpg" alt="HL" style="width:280px;height:240px;border:0;" align = "right">
 <p style='font-size:20px' align ='left'> \[&beta; = &Sqrt; (Y^{T}CY) \] <p>
-<p style='font-size:24px' align ='left'> Y is the vector of calculated random Variable X and C is the correlation matrix<p>
-<p style='font-size:24px' align ='left'> Find the failure surface (x, y, z, R and &alpha;) and critical material parameters X(P) which give minimum reliability index &beta; <p>
+<p style='font-size:24px' align ='left'> Y is the vector of calculated random variable X whereas C is the correlation matrix<p>
+<p style='font-size:24px' align ='left'> Goal: Find the critical set of a failure surface (x, y, z, R and &alpha;) with critical material parameters X(P) which give minimum reliability index &beta; <p>
 </section>
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <section id="GA">
 <h3> <a href="index.html#/OL" title="back"> Genetic Algorithm </a> </h3>     
-<img src="images/MulGA.jpg" alt="MulGA" style="width:700px;height:450px;border:0;" align = "centre"> 
 <p style='font-size:24px' align ='left'> Combination of Darwin's theory of evolution with genetics
 <p style='font-size:24px' align ='left'> The genetic analogy coms from the mixing of numerical values (DNAs) of individuals until the optimal values are found <p>
+<img src="images/MulGA.jpg" alt="MulGA" style="width:700px;height:450px;border:0;" align = "centre"> 
 </section>
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
